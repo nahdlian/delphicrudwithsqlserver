@@ -1,0 +1,316 @@
+object FormDataDiri: TFormDataDiri
+  Left = 398
+  Top = 103
+  Caption = 'FormDataDiri'
+  ClientHeight = 510
+  ClientWidth = 773
+  Color = clNavy
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 16
+    Top = 75
+    Width = 34
+    Height = 19
+    Caption = 'NIM'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Top = 127
+    Width = 103
+    Height = 19
+    Caption = 'Nama Lengkap'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Top = 182
+    Width = 95
+    Height = 19
+    Caption = 'Jenis Kelamin'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Top = 258
+    Width = 53
+    Height = 19
+    Caption = 'Jurusan'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Top = 301
+    Width = 48
+    Height = 19
+    Caption = 'Alamat'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object editNIM: TEdit
+    Left = 152
+    Top = 75
+    Width = 129
+    Height = 27
+    Color = clBlack
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnKeyPress = editNIMKeyPress
+  end
+  object editNama: TEdit
+    Left = 152
+    Top = 127
+    Width = 217
+    Height = 27
+    Color = clBlack
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnKeyPress = editNamaKeyPress
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 825
+    Height = 44
+    Caption = 'Data Diri Mahasiswa'
+    Color = clNone
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 2
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 152
+    Top = 165
+    Width = 217
+    Height = 71
+    Color = clWhite
+    Ctl3D = True
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    Items.Strings = (
+      'Laki - Laki'
+      'Perempuan')
+    ParentBackground = False
+    ParentColor = False
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 3
+  end
+  object cbbJurusan: TComboBox
+    Left = 152
+    Top = 258
+    Width = 153
+    Height = 27
+    Color = clBlack
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = cbbJurusanClick
+    OnKeyPress = cbbJurusanKeyPress
+    Items.Strings = (
+      '-- Pilih Jurusan -- '
+      'Informatika'
+      'Sistem Informasi'
+      'Teknik Komputer'
+      'Teknik Industri'
+      'Teknik Arsitektur'
+      'Teknik Sipil '
+      'Akuntansi'
+      'Psikologi'
+      'Sastra Inggris')
+  end
+  object btnSimpan: TButton
+    Left = 16
+    Top = 424
+    Width = 81
+    Height = 33
+    Caption = 'SIMPAN'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = btnSimpanClick
+  end
+  object btnBatal: TButton
+    Left = 103
+    Top = 423
+    Width = 82
+    Height = 34
+    Caption = 'BATAL'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = btnBatalClick
+  end
+  object ButtonQuery: TButton
+    Left = 16
+    Top = 463
+    Width = 169
+    Height = 36
+    Caption = 'SIMPAN w QUERY'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = ButtonQueryClick
+  end
+  object Button2: TButton
+    Left = 191
+    Top = 423
+    Width = 82
+    Height = 34
+    Caption = 'HAPUS'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+  object Memo1: TMemo
+    Left = 152
+    Top = 301
+    Width = 217
+    Height = 99
+    Color = clBlack
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    Lines.Strings = (
+      'Memo1')
+    ParentFont = False
+    TabOrder = 9
+  end
+  object DBGrid1: TDBGrid
+    Left = 384
+    Top = 127
+    Width = 377
+    Height = 273
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 10
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+  end
+  object cbbSearch: TComboBox
+    Left = 384
+    Top = 75
+    Width = 153
+    Height = 27
+    Color = clBlack
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 11
+    OnChange = cbbSearchChange
+    OnClick = cbbJurusanClick
+    OnKeyPress = cbbJurusanKeyPress
+    Items.Strings = (
+      '-- Pilih Jurusan -- '
+      'Informatika'
+      'Sistem Informasi'
+      'Teknik Komputer'
+      'Teknik Industri'
+      'Teknik Arsitektur'
+      'Teknik Sipil '
+      'Akuntansi'
+      'Psikologi'
+      'Sastra Inggris')
+  end
+  object Button1: TButton
+    Left = 191
+    Top = 463
+    Width = 82
+    Height = 36
+    Caption = 'UPDATE'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 12
+    OnClick = Button1Click
+  end
+end

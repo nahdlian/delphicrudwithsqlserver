@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/02/14 07:59:37.419.pas,C:\Users\LK1031UTY\Documents\RAD Studio\Projects\Unit1.pas=D:\5160411402 Muhammad Gilang Pratama\UnitDataDiri.pas</Transaction>
+    <Transaction>2019/02/14 07:59:37.419.dfm,C:\Users\LK1031UTY\Documents\RAD Studio\Projects\Unit1.dfm=D:\5160411402 Muhammad Gilang Pratama\UnitDataDiri.dfm</Transaction>
+    <Transaction>2019/02/14 07:59:56.101.dproj,C:\Users\LK1031UTY\Documents\RAD Studio\Projects\Project2.dproj=D:\5160411402 Muhammad Gilang Pratama\Biodata.dproj</Transaction>
+    <Transaction>2019/02/21 09:11:05.894.pas,D:\5160411402 Muhammad Gilang Pratama\Unit1.pas=D:\5160411402 Muhammad Gilang Pratama\UnitDM.pas</Transaction>
+    <Transaction>2019/02/21 09:11:05.894.dfm,D:\5160411402 Muhammad Gilang Pratama\Unit1.dfm=D:\5160411402 Muhammad Gilang Pratama\UnitDM.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

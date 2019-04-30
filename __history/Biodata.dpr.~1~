@@ -1,0 +1,14 @@
+program Biodata;
+
+uses
+  Forms,
+  UnitDataDiri in 'UnitDataDiri.pas' {FormDataDiri};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFormDataDiri, FormDataDiri);
+  Application.Run;
+end.
